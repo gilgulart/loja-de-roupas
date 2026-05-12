@@ -1,8 +1,17 @@
-.formatImg {
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+.heroImg {
     width: 100vw;
     height: 35vh;
     object-fit: cover;
     position: absolute;
+}
+
+.model{
+    width: 100vw;
+    height: 30vh;
 }
 
 .hero h1 {

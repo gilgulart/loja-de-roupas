@@ -9,23 +9,35 @@ header {
 
 
 nav{
-    padding: 48px 16px;
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo img {
     display: flex;
     justify-self: center;
-    align-items: center;
-    max-width: 50vw;
+    max-width: 70vw;
 }
 
 nav ul{
     display: flex;
     justify-content: space-around;
-
 }
 
 ul li {
+    display: flex;
     list-style: none;
     color: var(--text);
+    cursor: pointer;
+}
+
+.navIcons {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end ;
+    gap: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: var(--text);
 }
