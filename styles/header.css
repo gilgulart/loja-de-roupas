@@ -5,6 +5,7 @@ header {
     justify-content: center;
     background-color: var(--primary-color);
     color: var(--text);
+    border-bottom: 1px solid var(--primary-dark);
 }
 
 

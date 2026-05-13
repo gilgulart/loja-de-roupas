@@ -24,7 +24,7 @@
     --text-grey: #7A7A7A;
 
     --shadow: 0 4px 12px rgba(0,0,0,0.08);
-    --border: 1px solid #2A2A31
+    --border: 1px solid #2A2A31;
 
     --poppins: 'Poppins', sans-serif;
     --inter: 'Inter', sans-serif;
@@ -44,8 +44,8 @@ html {
 
 body {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
     background-color: var(--bg-color);
     font-family: var(--inter);
 }

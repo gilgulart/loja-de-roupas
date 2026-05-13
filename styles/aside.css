@@ -1,18 +1,18 @@
+aside{
+    height: 35vh;
+}
 .hero{
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 .heroImg {
-    width: 100vw;
-    height: 35vh;
-    object-fit: cover;
     position: absolute;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
 }
 
-.model{
-    width: 100vw;
-    height: 30vh;
-}
 
 .hero h1 {
     font-family: var(--grotesk);
@@ -30,17 +30,24 @@
 }
 
 .text {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 180px;
+    top: 160px;
 }
 
 .text button {
-    height: 3vh;
-    width: 40vw;
+    padding: 0.8rem;
     background-color: #0D0D0D;
     color: var(--primary-dark);
     border:1px solid var(--primary-hover);
+    
+}
+
+.model {
+    height: 55%;
+    width: 100%;
+    object-fit: contain;
+
 }
