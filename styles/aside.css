@@ -1,15 +1,11 @@
-aside{
-    height: 35vh;
-}
 .hero{
-    position: relative;
     display: flex;
     flex-direction: column;
 }
 .heroImg {
-    position: absolute;
+    /* position: relative; */
     width: 100%;
-    height: 70%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -26,15 +22,14 @@ aside{
     font-weight: 300;
     font-family: var(--inter);
     color: var(--text);
-    margin-bottom: 1rem;
 }
 
 .text {
-    position: relative;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 160px;
+    /* top: 50%; */
 }
 
 .text button {
@@ -42,7 +37,7 @@ aside{
     background-color: #0D0D0D;
     color: var(--primary-dark);
     border:1px solid var(--primary-hover);
-    
+
 }
 
 .model {
