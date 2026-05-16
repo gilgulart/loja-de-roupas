@@ -39,6 +39,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    color: var(--text);
 }
 
 body {
@@ -52,5 +53,10 @@ body {
 
 h1, h2, h3, button, nav {
     font-family: var(--poppins);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 

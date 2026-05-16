@@ -1,4 +1,4 @@
-header {
+.scroll-header {
     height: 2.5rem;
     display: flex;
     align-items: center;
@@ -19,6 +19,8 @@ nav {
     z-index: 1;
 }
 
+
+
 .logo img {
     display: flex;
     justify-self: center;
@@ -37,6 +39,11 @@ ul li {
     cursor: pointer;
 }
 
+ul li:hover{
+    color: var(--primary-color);
+
+}
+
 .navIcons {
     display: flex;
     align-self: flex-end;
@@ -47,8 +54,8 @@ ul li {
 }
 
 @media (min-width: 1024px) {
-    header {
-        height: 100%;
+    .scroll-header {
+        height: 10%;
     }
     nav{
         position: static;

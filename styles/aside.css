@@ -1,21 +1,22 @@
-.hero{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+.hero {
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    min-height: 100vh;
+    width: 100%;
 }
 
 .heroImg {
-    position: relative;
     width: 100%;
-    height: 60%;
+    height: 60vh;
     object-fit: cover;
+    display: block;
 }
 
 .hero h1 {
     font-family: var(--grotesk);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: clamp(3rem, 2vw, 4rem);
     color: var(--primary-color);
     text-transform: uppercase;
 }
@@ -28,28 +29,61 @@
 
 .text {
     position: absolute;
+    inset: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 60%;
-    right: 15%  ;
+    justify-content: center;
+
+    text-align: center;
 }
 
 .text button {
-    padding: 0.8rem;
     background-color: #0D0D0D;
-    color: var(--primary-dark);
-    border:1px solid var(--primary-hover);
 
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+
+    color: var(--primary-dark);
+
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+
+    transition: background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    ;
 }
+
+.text button:hover {
+    border-color: var(--primary-hover);
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 15px rgba(107, 0, 255, 0.5),
+        0 0 30px rgba(107, 0, 255, 0.2);
+}
+
+.text button:active {
+    transform: scale(0.98);
+    box-shadow:
+        0 0 8px rgba(107, 0, 255, 0.4);
+}
+
+
 
 @media (min-width: 1024px) {
     .heroImg {
-         height: 95%;
+        height: 95%;
     }
 
+
     .text {
-        top: 90%;
-        right: 35%;
+        justify-content: unsafe;
+
     }
 }
