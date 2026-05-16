@@ -9,9 +9,9 @@ header {
 }
 
 
-nav{
+nav {
     background-color: var(--bg-color);
-    padding: 4% 4%;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -25,7 +25,7 @@ nav{
     max-width: 50%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-around;
 }
@@ -39,9 +39,21 @@ ul li {
 
 .navIcons {
     display: flex;
-    align-self: flex-end ;
+    align-self: flex-end;
     gap: .5rem;
     width: 2.5rem;
     height: 2.5rem;
     fill: var(--text);
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 100%;
+    }
+    nav{
+        position: static;
+    }
+    .logo img {
+        width: 15%;
+    }
 }
