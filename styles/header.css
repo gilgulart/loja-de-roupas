@@ -1,13 +1,39 @@
-.scroll-header {
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.topbar {
+    /* display: flex; */
+    /* align-items: center; */
+
+    width: 100%;
+    padding: .9rem 0;
+    overflow: hidden;
     background-color: var(--primary-color);
     color: var(--text);
     border-bottom: 1px solid var(--primary-dark);
 }
 
+.track {
+    display: flex;
+
+    gap: 3rem;
+    width: fit-content;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    animation: marquee 20s linear infinite;
+}
+.track span {
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
 
 nav {
     background-color: var(--bg-color);
