@@ -35,7 +35,7 @@
     }
 }
 
-nav {
+.nav-top {
     background-color: var(--bg-color);
     padding: 1rem 1.5rem;
     display: flex;
@@ -50,19 +50,19 @@ nav {
     max-width: 50%;
 }
 
-nav ul {
+.nav-top ul {
     display: flex;
     justify-content: space-around;
 }
 
-ul li {
+.nav-top ul li {
     display: flex;
     list-style: none;
     color: var(--text);
     cursor: pointer;
 }
 
-ul li:hover{
+.nav-top ul li:hover{
     color: var(--primary-color);
 
 }
