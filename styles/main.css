@@ -1,7 +1,5 @@
 main {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
+    
 
     gap: 2rem;
 
@@ -22,7 +20,6 @@ main {
 
     cursor: pointer;
 
-    background: #0a0a0a;
 
     pointer-events: none;
 
@@ -39,31 +36,66 @@ main {
             rgba(0, 180, 255, 0.15),
             transparent 40%),
 
+        radial-gradient(circle at 70% 70%,
+            rgba(255, 180, 0, 0.08),
+            transparent 30%),
+        radial-gradient(circle at 70% 70%,
+            rgba(255, 170, 0, 0.12),
+            transparent 35%),
+
+        radial-gradient(circle at 30% 70%,
+            rgba(145, 255, 0, 0.08),
+            transparent 30%),
         #050505;
 
-    background-size:
-        200% 200%;
+    background-size: 300% 300%;
+    mix-blend-mode: color;
+    /* opacity: 0.8; */
 
-    animation:
-        bgMove 20s ease-in-out infinite alternate;
+
+    animation: bgMove 25s ease-in-out infinite alternate;
 }
 
+.background-main::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url(../assets/img/100-100-30.png);
+
+    opacity: 0.77;
+
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}
 
 @keyframes bgMove {
 
     0% {
         background-position:
-        0% 0%;
+            0% 0%;
     }
 
     50% {
         background-position:
-        100% 50%;
+            100% 50%;
     }
 
     100% {
         background-position:
-        0% 100%;
+            0% 100%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
     }
 
 }
