@@ -49,7 +49,6 @@ main {
 
     background-size: 300% 300%;
     mix-blend-mode: color;
-    /* opacity: 0.8; */
 
 
     animation: bgMove 25s ease-in-out infinite alternate;
