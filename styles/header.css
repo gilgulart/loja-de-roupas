@@ -46,6 +46,7 @@
 
 .logo img {
     display: flex;
+    align-items: center;
     justify-self: center;
     max-width: 50%;
 }
