@@ -1,15 +1,41 @@
-.scroll-header {
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.topbar {
+    /* display: flex; */
+    /* align-items: center; */
+
+    width: 100%;
+    padding: .9rem 0;
+    overflow: hidden;
     background-color: var(--primary-color);
     color: var(--text);
     border-bottom: 1px solid var(--primary-dark);
 }
 
+.track {
+    display: flex;
 
-nav {
+    gap: 3rem;
+    width: fit-content;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    animation: marquee 20s linear infinite;
+}
+.track span {
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.nav-top {
     background-color: var(--bg-color);
     padding: 1rem 1.5rem;
     display: flex;
@@ -20,23 +46,24 @@ nav {
 
 .logo img {
     display: flex;
+    align-items: center;
     justify-self: center;
     max-width: 50%;
 }
 
-nav ul {
+.nav-top ul {
     display: flex;
     justify-content: space-around;
 }
 
-ul li {
+.nav-top ul li {
     display: flex;
     list-style: none;
     color: var(--text);
     cursor: pointer;
 }
 
-ul li:hover{
+.nav-top ul li:hover{
     color: var(--primary-color);
 
 }
