@@ -92,7 +92,7 @@
 }
 
 .description {
-
+    text-align: justify;
     max-width: 500px;
 
     line-height: 1.6;
@@ -107,6 +107,7 @@
     padding: 1rem 2rem;
 
     border: none;
+    border-radius: 10px;
 
     cursor: pointer;
 
