@@ -105,6 +105,9 @@
 }
 
 @media (max-width: 768px) {
+  html{
+    overflow-x: hidden;
+  }
   .collection { 
   position: relative;
   display:block;
