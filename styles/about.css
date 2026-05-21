@@ -44,3 +44,12 @@
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.container-background {
+    color: var(--text);
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+}
