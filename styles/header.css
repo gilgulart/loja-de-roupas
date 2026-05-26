@@ -1,7 +1,4 @@
 .topbar {
-    /* display: flex; */
-    /* align-items: center; */
-
     width: 100%;
     padding: .9rem 0;
     overflow: hidden;
@@ -84,9 +81,6 @@
 }
 
 @media (min-width: 1024px) {
-    .scroll-header {
-        height: 10%;
-    }
     .logo img {
         width: 15%;
     }
