@@ -20,7 +20,7 @@ main {
 
 
     pointer-events: none;
-    
+
 
     background:
         radial-gradient(circle at 20% 20%,
@@ -54,21 +54,6 @@ main {
     animation: bgMove 25s ease-in-out infinite alternate;
 }
 
-.background-main::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background-image: url(../assets/img/100-100-30.png);
-
-    opacity: 0.9;
-
-    mix-blend-mode: overlay;
-
-    pointer-events: none;
-}
 
 @keyframes bgMove {
 
@@ -89,3 +74,18 @@ main {
 
 }
 
+.background-main::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url(../assets/img/100-100-30.png);
+
+    opacity: 0.9;
+
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}

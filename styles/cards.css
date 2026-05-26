@@ -65,7 +65,7 @@
 .card:hover .imgHover{
     opacity: 1;
 }
-
+ 
 @media (min-width: 1024px) {
     .card-container {
         display: grid;
