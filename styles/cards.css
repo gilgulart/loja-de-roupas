@@ -65,6 +65,10 @@
 .card:hover .imgHover{
     opacity: 1;
 }
+
+.card:focus-within{
+    transform: scale(1.02);
+}
  
 @media (min-width: 1024px) {
     .card-container {

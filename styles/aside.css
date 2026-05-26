@@ -36,7 +36,7 @@
     text-align: center;
 }
 
-.text button {
+.text a {
     background-color: #0D0D0D;
 
     margin-top: 0.5rem;
@@ -55,7 +55,7 @@
     ;
 }
 
-.text button:hover {
+.text a:hover {
     border-color: var(--primary-hover);
 
     transform: scale(1.03);
@@ -65,7 +65,7 @@
         0 0 30px rgba(107, 0, 255, 0.2);
 }
 
-.text button:active {
+.text a:active {
     transform: scale(0.98);
     box-shadow:
         0 0 8px rgba(107, 0, 255, 0.4);
