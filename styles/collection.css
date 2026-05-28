@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
   gap: 0;
-  height: 20vh;
+  height: 35vh;
   width: 100%;
   margin-bottom: 2.5vh;
 
@@ -50,16 +50,6 @@
   display: block;
   transition: transform 0.4s ease;
 }
-
-/* .image--far-right:hover,
-.image--right:hover,
-.image--left:hover,
-.image--far-left:hover {
-  z-index: 100;
-  transform: scale(1.15);
-  transition: transform 0.4s ease, z-index 0s;
-} */
-
 
 .image--center {
   z-index: 3;
@@ -156,27 +146,23 @@
   left: 75%;
 }
 
-   
 .image--far-right:hover,
 .image--right:hover,
 .image--left:hover,
 .image--far-left:hover {
-  overflow: visible !important;
   position: absolute;
   transform: scale(1);
-  width: 80vw;
-  height: 70vw;
+  width: 50vw;
+  height: 54.5vw;
   z-index: 101;
   left: 24%;
+  transition: transform 0.4s ease
 }
 
 .collection:hover,
 .image img:hover{
   overflow: visible;
 }
-
-
-
 
 }  
 
