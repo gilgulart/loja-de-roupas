@@ -58,21 +58,8 @@
   z-index: 100;
   transform: scale(1.15);
   transition: transform 0.4s ease, z-index 0s;
-}
-
-.image--far-right:hover img,
-.image--right:hover img,
-.image--left:hover img,
-.image--far-left:hover img {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40vw;
-  height: 80vh;
-  object-fit: cover;
-  z-index: 1000;
 } */
+
 
 .image--center {
   z-index: 3;
@@ -138,6 +125,7 @@
   transform: scale(1.05);
   width: 30%;
   left: -5%;
+  overflow: hidden;
 }
 
 .image--left {
@@ -168,7 +156,27 @@
   left: 75%;
 }
 
-  
+   
+.image--far-right:hover,
+.image--right:hover,
+.image--left:hover,
+.image--far-left:hover {
+  overflow: visible !important;
+  position: absolute;
+  transform: scale(1);
+  width: 80vw;
+  height: 70vw;
+  z-index: 101;
+  left: 24%;
+}
+
+.collection:hover,
+.image img:hover{
+  overflow: visible;
+}
+
+
+
 
 }  
 
